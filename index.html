@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - muhammad rizal</title>
+    <link href="output.css" rel="stylesheet">
+</head>
+<header class="bg-white shadow">
+    <div class="container mx-auto flex justify-between items-center py-4">
+      <div>
+        </div>
+      <div class="hidden md:flex space-x-8 dark:text-black">
+        <a href="index.html" class="hover:bg-gray-200">Home</a>
+        <a href="pendidikan.html" class="hover:bg-gray-200">pendidikan</a>
+        <a href="interests.html" class="hover:bg-gray-200">interests</a>
+        <a href="tentang.html" class="hover:bg-gray-200">Tentang</a>
+        <a href="kontak.html" class="hover:bg-gray-200">Kontak</a>
+      </div>
+      <button id="hamburgerButton" class="md:hidden">
+        <img src= "assets/hamburger.png" class="mx-2 h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+      </img>
+      </button>
+    </div>
+  </header>
+
+  <div id="mobileMenu" class=" hidden fixed top-8 left-0 right-0 bottom-8 z-10 bg-white">
+    <div class="py-4 ">
+      <div class="flex justify-end px-4 ">
+        <button id="closeButton">
+          <img src="assets/close.png" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        </img>
+        </button>
+      </div>
+      <img src="assets/WhatsApp Image 2024-05-08 at 11.24.00_4add0260.jpg" alt="Website Logo" class="h-14 ml-2 "> 
+      <div class="mt-4 dark:text-black">
+        <a href="index.html" class="block py-2 px-4 hover:bg-gray-200">Home</a>
+        <a href="pendidikan.html" class="block py-2 px-4 hover:bg-gray-200">pendidikan</a>
+        <a href="interests.html" class="block py-2 px-4 hover:bg-gray-200">interests</a>
+        <a href="tentang.html" class="block py-2 px-4 hover:bg-gray-200">Tentang</a>
+        <a href="kontak.html" class="block py-2 px-4 hover:bg-gray-200">Kontak</a>
+      </div>
+    </div>
+  </div>
+<body class="bg-gray-100 text-gray-800">
+    <header class="bg-green-500 text-white py-6 text-left pl-5">
+        <img src="..//src/assets/WhatsApp Image 2024-11-11 at 21.06.25_ad7a58e8.jpg" class="w-40"> 
+        <h1 class="text-3xl font-bold">muhammad rizal</h1> 
+        <p class="text-lg">web developer | video editing | problem solver</p>
+    </header>
+    
+    <div class="container mx-auto mt-8 p-6 bg-white rounded-lg shadow-md">
+        <section class="mb-6">
+            <h2 class="text-2xl font-semibold text-green-500 mb-4">tentang Saya</h2>
+            <p>saya muhammad rizal seorang profesional IT yang memiliki keahlian mendalam dalam konfigurasi, manajemen, dan pengoptimalan jaringan menggunakan perangkat Mikrotik dan Cisco. Dengan pemahaman yang kuat tentang routing, switching, dan keamanan jaringan, saya mampu merancang dan mengimplementasikan solusi jaringan yang efisien, andal, dan sesuai kebutuhan. Pengalaman saya mencakup konfigurasi router dan switch, penerapan VPN, QoS, dan troubleshooting jaringan kompleks untuk memastikan kinerja optimal.</p>
+        </section>
+
+        <section class="mb-6">
+            <h2 class="text-2xl font-semibold text-green-500 mb-4">pendidikan</h2>
+            <ul class="list-disc pl-6">
+            <li>SD AL-FITYAN SCHOOL</li>
+            <li>SMP IT ISTANA MULIA</li>
+            <li>SMA AL-FITYAN SCHOOL</li>
+            <li>ARETA INFORMATICS COLLEGE</li>
+            </ul>
+        </section>
+
+        <section class="mb-6">
+            <h2 class="text-2xl font-semibold text-green-500 mb-4">Interests</h2>
+            <p>I am deeply interested in topics related movie, quotes and future.</p>
+        </section>
+
+        <section>
+            <h2 class="text-2xl font-semibold text-green-500 mb-4">kontak</h2>
+            <p>Email: <a href="mailto:rizasanneko@gmail.com" class="text-blue-500 hover:underline">risalmuhammad2436@gmail.com</a></p>
+            <p>Whatsapp: <a href="#" class="text-blue-500 hover:underline">+6282114870063</a></p>
+        </section>
+    </div>
+
+    <footer class="text-center py-4 bg-gray-800 text-white mt-8">
+        <p>&copy; 2025 muhammad rizal. All rights reserved.</p>
+    </footer>
+</script>
+<script>
+    const hamburgerButton = document.getElementById('hamburgerButton');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const closeButton = document.getElementById('closeButton');
+    const icon = document.getElementById('icon');
+    const websiteIcon = document.getElementById('websiteIcon');
+
+    hamburgerButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+      icon.classList.toggle('hidden');
+      websiteIcon.classList.toggle('hidden');
+    });
+
+    closeButton.addEventListener('click', () => {
+      mobileMenu.classList.add('hidden');
+      icon.classList.remove('hidden'); 
+      websiteIcon.classList.add('hidden');
+    });
+  </script>
+</body>
+</html>
